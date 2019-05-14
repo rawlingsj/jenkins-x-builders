@@ -386,9 +386,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-maven-java11/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-maven-java11:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-maven-java11:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -397,9 +397,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-maven-nodejs/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-maven-nodejs:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-maven-nodejs:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -408,9 +408,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-go/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-go:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-go:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -419,9 +419,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-python37/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-python37:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-python37:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -430,9 +430,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-go-maven/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-go-maven:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-go-maven:${inputs.params.version}
                   - --context=/workspace/source/builder-go-maven
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -441,9 +441,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-jx/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-jx:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-jx:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -452,9 +452,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-python/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-python:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-python:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -463,9 +463,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-maven-32/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-maven-32:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-maven-32:${inputs.params.version}
                   - --context=/workspace/source/builder-maven-32
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -474,9 +474,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-dlang/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-dlang:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-dlang:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -485,9 +485,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-gradle/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-gradle:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-gradle:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -496,9 +496,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-gradle4/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-gradle4:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-gradle4:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -507,9 +507,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-gradle5/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-gradle5:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-gradle5:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -518,9 +518,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-gradle5-java11/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-gradle5-java11:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-gradle5-java11:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -529,9 +529,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-machine-learning/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-machine-learning:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-machine-learning:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -540,9 +540,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-maven/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-maven:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-maven:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -551,9 +551,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-newman/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-newman:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-newman:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -562,9 +562,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-nodejs/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-nodejs:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-nodejs:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -573,9 +573,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-nodejs8x/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-nodejs8x:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-nodejs8x:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -584,9 +584,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-nodejs10x/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-nodejs10x:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-nodejs10x:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -595,9 +595,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-python2/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-python2:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-python2:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -606,9 +606,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-ruby/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-ruby:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-ruby:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -617,9 +617,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-rust/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-rust:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-rust:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -628,9 +628,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-scala/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-scala:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-scala:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -639,9 +639,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-swift/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-swift:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-swift:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -650,9 +650,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-terraform/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-terraform:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-terraform:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
@@ -661,15 +661,9 @@ pipelineConfig:
               - command: /kaniko/executor
                 args:
                   - --dockerfile=/workspace/source/builder-cf/Dockerfile
-                  - --destination=gcr.io/jenkinsxio/builder-cf:${inputs.params.version}
+                  - --destination=gcr.io/jr-test-parallal/builder-cf:${inputs.params.version}
                   - --context=/workspace/source
-                  - --cache-repo=gcr.io/jenkinsxio/cache
+                  - --cache-repo=gcr.io/jr-test-parallal/cache
                   - --cache=true
                   - --cache-dir=/workspace
 
-          # update downstream dependencies
-          - name: update-bot
-            steps:
-            - name: update
-              image: gcr.io/jenkinsxio/builder-maven:${inputs.params.version}
-              command: ./update-bot.sh
